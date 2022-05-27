@@ -4,9 +4,10 @@ let btn_buy = document.getElementsByClassName("btn-buy");
 let cant = document.getElementById("cantidad");
 let cart_empty = document.getElementById("cart-view");
 
-let cart= [];
-let showCart=[];
-let itemCart= 0 ;
+let itemCart = 0;
+let cart= []; // cart para convertir a json
+let showCart=[]; // cart sin convertir para mostrar en el html
+
 
 for (let button of btn_buy)
 {
@@ -44,12 +45,15 @@ function addCart(e)
         imageAlt:'Producto' ,
       })
 
-    itemCart ++ ;
+    
+    
+    itemCart ++;
+    console.log("Tu carrito tiene", itemCart + " producto(s) ")
     document.getElementById('cantidad').innerHTML = itemCart;
 
-    console.log(p_name);
-    console.log(p_desc);
-    console.log(p_price);
+    //console.log(p_name);
+    //console.log(p_desc);
+    //console.log(p_price);
 
 
     let product = 
@@ -61,18 +65,46 @@ function addCart(e)
         cant : 1
     }
     
-    showCart.push(product);
+    showCart.push(product); // cargar el objeto al arreglo carrito
     //cart.push(product);
-    let cart_json = JSON.stringify(product);  // Convertir el arreglo a string JSON
-    cart.push(cart_json); // pushear el arreglo convertido
 
-    localStorage.setItem("productos", cart); // Cargar al local storage el arreglo
+    let cart_json = JSON.stringify(showCart);  // Convertir el arreglo a string JSON
+    cart.push(cart_json); // pushear al arreglo el objeto convertido a string JSon 
+
+    localStorage.setItem("productos", cart_json); // Cargar al local storage el string Json
+    //console.log(cart_json); // String Jason
 
     
-    console.log(cart);
 
-    show_Products(product);
+    //Recuperar del local storage
+    let rec_json = localStorage.getItem("productos"); // recuperar de Local Storage
+    //console.log("recuperado de ls " , rec_json);
 
+    ///////////// desconvertir de  de JSon
+    let cart_nj= JSON.parse(rec_json);
+    
+
+    let cart_show = [];
+    cart_show.push(cart_nj);
+
+    let {cant} = product;
+    
+    console.log ("Productos añadidos al carrito " + "" , ...cart_nj);
+    console.log("Cantidad de cada producto",cant);
+
+
+    
+   
+    
+
+
+
+
+
+
+
+
+    show_Products(product); // llamada al metodo para ver los poductos en html
 }
 
 function show_Products( product )
