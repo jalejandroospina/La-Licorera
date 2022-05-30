@@ -18,16 +18,6 @@ for (let button of btn_buy)
 function addCart(e)
 {
 
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Agregado Correctamente',
-        showConfirmButton: false,
-        timer: 800
-      })
-
-      
-
     button = e.target;
     let item = button.parentNode.parentNode;
      
@@ -37,12 +27,13 @@ function addCart(e)
     let p_price = item.querySelector(".price").textContent;
 
     Swal.fire({
-        title: 'Agregado Correctamente!',
-        text: `${p_name}`,
+        title:'¡ Agregado Correctamente !',
+        text: `${p_name} - ${p_desc} `,
         imageUrl: `${p_img}`,
         imageWidth: 200,
         imageHeight: 200,
-        imageAlt:'Producto' ,
+        imageAlt:'Producto',
+        
       })
 
     

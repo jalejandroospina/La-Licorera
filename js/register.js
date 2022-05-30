@@ -13,6 +13,14 @@ function registration ()
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
+    Swal.fire({
+        icon: 'success',
+        title: '¡ Registro Exitoso !',
+        text: 'Te has registrado exitosamente',
+        showConfirmButton : false,
+        footer: '<a class="toIndex" href="./index.html">Ir a Comprar</a>'
+      })
+
     let customer = 
     { 
         name : name,

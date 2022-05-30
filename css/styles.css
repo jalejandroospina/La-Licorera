@@ -155,5 +155,15 @@ input
     color: orange;
 
 }
-
+.toIndex
+{
+   
+    color: orange;
+    text-decoration: underline;
+}
+.toIndex:hover
+{
+   
+    color: black;
+}
 
