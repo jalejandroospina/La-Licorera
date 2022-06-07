@@ -13,6 +13,8 @@ a
 {
     text-decoration: none;
     color: white;
+    
+    
 }
 h1
 {
@@ -44,7 +46,7 @@ input
 {
     margin-top: 30px;   
     margin-bottom: 50px;    
-    border-radius: 0.25rem;
+    border-radius: 0.80rem;
     background-color: white;
     /*box-shadow: 10px 10px 10px  orange; */
     
@@ -56,26 +58,25 @@ input
 {
     text-align:center;
     color: black;
-    margin-top: 5%;
-    padding-top: 20px;
+    padding-top: 25px;
     font-style: italic;
 }
 .beer
 {
-    border-radius: 20px;
+    
     background-color:  #ffe25f; 
     padding-bottom: 10px;
-    margin: 50px;
+    
     
    
 }
 
 .ron
 {
-    border-radius: 20px;
+    
     background-color: #d3a870;
     padding-bottom: 10px;
-    margin: 50px;
+    
 
 
 
@@ -85,25 +86,25 @@ input
 .tequila
 {
 
-    border-radius: 20px;
+    
     background-color: #fff7e9;
     padding-bottom: 10px;
-    margin: 50px;
+    
 }
 .vodka
 {
-    border-radius: 20px;
+    
     background-color: gainsboro;
     padding-bottom: 10px;
-    margin: 50px;
+    
 }
 
 .wisky
 {
-    border-radius: 20px;
+    
     background-color: #f5e391;
     padding-bottom: 10px;
-    margin: 50px;
+    
 }
 .price
 {
@@ -167,3 +168,27 @@ input
     color: black;
 }
 
+.ft
+{
+   color: sienna;
+   font-weight: bold;
+   
+}
+.cart-products
+{
+    text-align: center;
+    
+    
+}
+.logo
+{
+   
+    margin-left: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.btn-main
+{
+    margin-right: 20px;
+}

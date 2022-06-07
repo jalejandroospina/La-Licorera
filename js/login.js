@@ -7,6 +7,13 @@ let dialog = document.getElementById("login");
 log.addEventListener("click", login);
 function login()
 {
+  
+  
+
+
+
+
+
     Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -18,4 +25,5 @@ function login()
     user.innerText = "Bienvenido";
     
 }
+
 

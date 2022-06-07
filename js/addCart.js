@@ -84,6 +84,24 @@ function addCart(e)
     console.log("Cantidad de cada producto",cant);
 
 
+    fetch('https://jsonplaceholder.typicode.com/posts',
+    {
+        method:"POST",
+        body: cart_json,
+        headers:
+        {
+            "Content-type":"application/jason;charset=utf-8"
+        }
+
+    })
+    .then((response)=> response.json)
+    .then(function(data)
+    {
+        console.log(data);
+        
+    })
+
+
     
    
     
@@ -106,10 +124,10 @@ function show_Products( product )
 
   let row = document.createElement("tr");
    row.innerHTML = 
-                    `<td>  <img src="${product.img}" width="100" height="100">  ${product.name} </td>
-                     <td>  ${product.description}  </td>
-                     <td>  ${product.price} </td>
-                     <td>  ${product.cant} </td>  
+                    `<td>  <img src="${product.img}" width="100" height="100">   </td>
+                     <td>  ${product.name} - ${product.description}   </td>
+                     <td> ${product.price} </td>
+                     <td class="cart-products">  ${product.cant} </td>  
                      `;
 
   let cart_display = document.getElementById("cart-content");

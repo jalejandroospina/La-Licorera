@@ -21,26 +21,18 @@
 
     <header class="menu">
     
-            <nav class="navbar ">
+            <nav class="navbar">
                 <div class="container-fluid">
                    
-                    <a href="./index.html"> <h1>La Licorera </h1></a>
+                    <a href="./index.html"> <span><img  class="logo" src="./images/La Licorera(liquor store)2.png" alt=""></span></a>
+                   
                     <a href="#beer"><span>Cerveza</span></a>
                     <a href="#ron"><span>Ron</span></a> 
                     <a href="#tequila"><span>Tequila</span></a> 
                     <a href="#vodka"><span>Vodka</span></a> 
                     <a href="#wisky"><span>Wisky</span></a> 
                     
-                      <span>
-                        <form class="d-flex ">
-                          <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                          <button>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg>
-                            </button>
-                      </form>
-                      </span>
+                      
 
                       <span>
                         <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -51,6 +43,7 @@
                             <span  id="cantidad" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                               0
                             </span>
+                            
                           </button>
                         </a>
                         
@@ -60,7 +53,7 @@
                       
                       
                         <span>
-                          <button id ="user" data-bs-toggle="modal" data-bs-target="#login">
+                          <button class="btn-main" id ="user" data-bs-toggle="modal" data-bs-target="#login">
                             <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                             </svg>
@@ -85,15 +78,15 @@
         <div class="cart offcanvas-body">
           
           <table class="table">
-            <thead id="head-row">
-              <td>Producto</td>
-                        <td></td>
-                        <td>Precio</td>
-                        <td>Cantidad</td>
+            <thead  id="head-row">
+              <td class="ft">Producto</td>
+                        <td class="ft"></td>
+                        <td class="ft">Precio</td>
+                        <td class="ft">Cantidad</td>
               
             </thead>
             <tbody id="cart-content">
-              <td id="cart-view">
+              <td class="container" id="cart-view">
                 Tu carrito esta vacio.
               </td>
             </tbody>
@@ -108,13 +101,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./images/banner-1.jpg" class="d-block w-100 " alt="...">
+                    <img src="./images/Vodka-Banner.png" class="d-block w-100 " alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/banner-1.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/Wisky-Banner.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/banner-1.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/Beer-Banner.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -477,7 +470,7 @@
     </main>
   
     <div class="foot">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center m-1 p-5 ">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center  p-5 ">
         
         <div class="col-md-2 d-flex ">
           <span class="">&copy; La Licorera 2022.</span>
@@ -496,6 +489,7 @@
     <script src="./js/bootstrap.js"></script>
     <script src="./js/addCart.js"></script> 
     <script src="./js/login.js"></script> 
+   
 
 
 </html>
