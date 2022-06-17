@@ -3,6 +3,8 @@
 let btn_buy = document.getElementsByClassName("btn-buy");
 let cant = document.getElementById("cantidad");
 let cart_empty = document.getElementById("cart-view");
+let cart_body = document.getElementById("cart-body");
+
 
 let itemCart = 0;
 let cart= []; // cart para convertir a json
@@ -13,6 +15,7 @@ for (let button of btn_buy)
 {
     button.addEventListener("click", addCart);
 }
+
 
 
 function addCart(e)
@@ -26,6 +29,8 @@ function addCart(e)
     let p_desc = item.querySelector(".description").textContent;
     let p_price = item.querySelector(".price").textContent;
 
+     
+/*
     Swal.fire({
         title:'¡ Agregado Correctamente !',
         text: `${p_name} - ${p_desc} `,
@@ -36,10 +41,10 @@ function addCart(e)
         
       })
 
-    
+ */
     
     itemCart ++;
-    console.log("Tu carrito tiene", itemCart + " producto(s) ")
+    console.log("Tu carrito tiene", itemCart + " producto(s) ");
     document.getElementById('cantidad').innerHTML = itemCart;
 
     //console.log(p_name);
@@ -134,4 +139,5 @@ function show_Products( product )
   cart_display.appendChild(row);
 
 }
+
 
