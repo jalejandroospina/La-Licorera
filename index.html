@@ -79,18 +79,22 @@
           
           <table class="table">
             <thead  id="head-row">
-              <td class="ft">Producto</td>
+              <td class="ft"></td>
                         <td class="ft"></td>
-                        <td class="ft">Precio</td>
-                        <td class="ft">Cantidad</td>
+                        <td class="ft"></td>
+                        <td class="ft"></td>
+                        
               
             </thead>
             <tbody id="cart-content">
               <td class="container" id="cart-view">
-                Tu carrito esta vacio.
+                Tu carrito está vacio.
               </td>
-            </tbody>
+            </tbody>  
+            
+            
           </table>
+
         </div>
       </div>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -119,7 +123,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
-             <!-- Button trigger modal -->
+            
              
 
             <!-- Modal -->
@@ -131,15 +135,38 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body" id="cart-body">
-                    <h1> title</h1>
-                    <img src="" alt="">
-                    <p>descripcion</p>
-                    <p>price</p>
-                    <p>cantidad</p>
-                    <button> - </button>
-                    <p>0</p>
-                    <button> + </button>
+                    <div class="container-fluid">
+                      <div class="col">
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col " id="p-image">
+                          
+                        </div>
+                        <div class="col">
+                          <p id="p-name" class="product"> title</p>
+                          <p id="p-desc" class="description">descripcion</p>
+                          <p id="p-price" class="price">price</p>
+                        </div>
+                      </div>
+                      <!--
+                      <div class="row">
+                        <div class="col-md-6 ms-auto amount">
+                          <p>Cantidad</p>
+                          <button type="button" id="less" class="">
+                            -
+                          </button>
+                          <p id="cant-value">1</p>
+                          <button type="button" id="plus" class="">
+                            +
+                          </button></div>
+                                                 
+                        </span>
+                      </div>
+                      ----->
 
+
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
@@ -148,6 +175,7 @@
                 </div>
               </div>
             </div>
+         
 
             <div id="beer" class="beer">
             
@@ -171,6 +199,7 @@
                           <button  type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Agregar al carrito
                           </button>
+                          
                           </div>
                       </div>
                     </div>
@@ -194,7 +223,7 @@
                           <h5 class="card-title product">Club Colombia</h5>
                           <p class="card-text description">Six Pack Lata x 330 ml</p>
                           <p class="price">$ 13.900</p>
-                          <button type="button" class="btn btn-primary btn-buy">
+                          <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Agregar al carrito
                           </button>
                           </div>
@@ -207,7 +236,7 @@
                           <h5 class="card-title product">Heineken</h5>
                           <p class="card-text description">Six Pack Lata x 269 ml</p>
                           <p class="price">$ 13.900</p>
-                          <button type="button" class="btn btn-primary btn-buy">
+                          <button type="button" class="btn btn-primary btn-buy"data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Agregar al carrito
                           </button>
                           </div>
@@ -228,7 +257,7 @@
                         <h5 class="card-title product">Zacapa</h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 99.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -241,7 +270,7 @@
                         <h5 class="card-title product">Havana Club </h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 83.900 </p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -254,7 +283,7 @@
                         <h5 class="card-title product">Bacardi</h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 52.900</p>
-                        <button  type="button" class="btn btn-primary btn-buy">
+                        <button  type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -267,7 +296,7 @@
                         <h5 class="card-title product">Ron Viejo de Caldas</h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 42.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -288,7 +317,7 @@
                         <h5 class="card-title product">Olmeca</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 69.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -301,7 +330,7 @@
                         <h5 class="card-title product">Jose Cuervo</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 72.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -314,7 +343,7 @@
                         <h5 class="card-title product">Don Julio</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 209.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -327,7 +356,7 @@
                         <h5 class="card-title product">Jimador</h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 91.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -348,7 +377,7 @@
                         <h5 class="card-title product">Absolut </h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 70.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -361,7 +390,7 @@
                         <h5 class="card-title product">Smirnoff</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 74.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -374,7 +403,7 @@
                         <h5 class="card-title product">Wyborowa</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 55.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -387,7 +416,7 @@
                         <h5 class="card-title product">Finlandia</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 64.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -408,7 +437,7 @@
                         <h5 class="card-title product">JW Red Label</h5>
                         <p class="card-text description">Botella x 700 ml</p>
                         <p class="price">$ 57.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -421,7 +450,7 @@
                         <h5 class="card-title product">Old Parr</h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 123.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -434,7 +463,7 @@
                         <h5 class="card-title product">Buchanan's</h5>
                         <p class="card-text description">Botella x 750 ml</p>
                         <p class="price">$ 135.900</p>
-                        <button type="button" class="btn btn-primary btn-buy">
+                        <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -447,7 +476,7 @@
                         <h5 class="card-title product">Something Special</h5>
                         <p class="card-text description">Botella x 750 ml.</p>
                         <p class="price">$ 70.900</p>
-                         <button type="button" class="btn btn-primary btn-buy">
+                         <button type="button" class="btn btn-primary btn-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Agregar al carrito
                         </button>
                         </div>
@@ -456,7 +485,8 @@
                 </div>
               </div>
             </div>  
-
+            
+            
             
 
 
@@ -495,6 +525,8 @@
                 </div>
               </div>
             </div>
+
+            
 
            
 
