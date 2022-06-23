@@ -1,7 +1,9 @@
+[
 {
-    "nombres":"John Alejandro",
-    "apellidos":"Ospina Garnica",
-    "email":"jalejandroospina@ucundinamarca.edu.co",
-    "contraseña":12345678
+    "nombres":"Usuario",
+    "apellidos":"Invitado",
+    "email":"user@coderhouse.com",
+    "pass": "1234"
     
   }
+]
